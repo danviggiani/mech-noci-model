@@ -933,4 +933,4 @@ for i in range(P):
 APChar = pd.DataFrame(APChar, columns = ['First AP (s)', 'Duration (s)', 'n AP', 'Peak Rate (Hz)'])      
 
 print(time.time() - ss)
-print('Lambda-Percent: '+str(np.mean(Lambda)))
+print('Lambda-Percent: ' + str(np.mean(Lambda)))
