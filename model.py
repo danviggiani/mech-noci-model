@@ -2,9 +2,9 @@
 """
 Created on Fri Dec 20 11:02:48 2019
 
-Updated on Tue Apr 26 2022
+Updated on Apr 28 2022
 
-@authors: Dan Viggiani, Jack P. Callaghan
+@authors: Dan Viggiani, Jack P. Callaghan; University of Waterloo
 
 """
 
@@ -910,7 +910,7 @@ def Simulate(NN, A, qv, tv, stress, timer = False):
 Lambda = []
 APChar = []
 
-sig_p = 0.95
+sig_p = 1.0
 
 ss = time.time()
 
@@ -933,4 +933,4 @@ for i in range(P):
 APChar = pd.DataFrame(APChar, columns = ['First AP (s)', 'Duration (s)', 'n AP', 'Peak Rate (Hz)'])      
 
 print(time.time() - ss)
-print('Lambda-Percent: '+str(np.round(np.mean(Lambda), 1)))
+print('Lambda-Percent: '+str(np.mean(Lambda)))
